@@ -1,0 +1,9 @@
+<svg width='2000' height='800'><rect width="2000" height="800" style="fill:rgb(219,252,135);stroke-width:3;stroke:rgb(219,252,135)" />
+ <rect width="2000" height="400" style="fill:rgb(230,230,250);stroke-width:3;stroke:rgb(230,230,250)" />
+<polygon points="100,400 330,200 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="285,240 330,200 372,250 360,260 340,250 300,265" style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="373,250 670,120 900,280 840,400 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="600,150 670,120 730,163 690,160 650,180 " style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="840,400 940,200 1100,400 840,400 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="925,230 940,200 960,227 950,235  " style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<circle cx="1150" cy="80" r="60" style="fill:rgb(255, 248, 156);stroke-width:3;stroke:rgb(228, 228, 154)"/>
