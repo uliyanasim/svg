@@ -1,0 +1,30 @@
+<svg width='2000' height='800'>
+<rect  width="2000" height="800" style="fill:rgb(219,252,135);stroke-width:3;stroke:rgb(219,252,135)" />
+<rect id="fon" width="2000" height="400" style="fill:#c2e9ff;stroke-width:3;stroke:#c2e9ff" />
+<polygon points="100,400 330,200 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="285,240 330,200 372,250 360,260 340,250 300,265" style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="373,250 670,120 900,280 840,400 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="600,150 670,120 730,163 690,160 650,180 " style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="840,400 940,200 1100,400 840,400 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="925,230 940,200 960,227 950,235  " style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<circle id="sun" cx="1150" cy="80" r="60" style="fill:rgb(255, 248, 156);stroke-width:3;stroke:rgb(228, 228, 154)"/>
+<polygon id="g" points="1200,490 1210,460 1250,500 1260,470" style="fill:rgb(240, 199, 249);stroke-width:3;stroke:rgb(204, 173, 234)" />
+<animate 
+           xlink:href="#fon"      
+           attributeName="fill"
+           values ="#c2e9ff;rgb(30, 210, 250);rgb(154, 162, 239);#732db7;#28087b;#fdc188;rgb(30, 210, 250);#c2e9ff"
+           dur="20s"
+           repeatCount="4"
+/>         
+
+<animate 
+           xlink:href="#g"      
+           attributeName="x" 
+    from="50"
+    to="425" 
+    dur="5s"
+    begin="circ-anim.repeat(2)"
+    fill="freeze" 
+          
+           repeatCount="4"
+/>         
