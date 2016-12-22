@@ -1,0 +1,61 @@
+<svg width='2000' height='800'>
+<rect  width="2000" height="800" style="fill:rgb(219,252,135);stroke-width:3;stroke:rgb(219,252,135)" />
+<rect id="fon" width="2000" height="400" style="fill:#c2e9ff;stroke-width:3;stroke:#c2e9ff" />
+<polygon points="100,400 330,200 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="285,240 330,200 372,250 360,260 340,250 300,265" style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="373,250 670,120 900,280 840,400 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="600,150 670,120 730,163 690,160 650,180 " style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="840,400 940,200 1100,400 840,400 500,400" style="fill:rgb(174,174,174);stroke-width:3;stroke:rgb(0,0,0)" />
+<polygon points="925,230 940,200 960,227 950,235  " style="fill:rgb(255,255,250);stroke-width:3;stroke:rgb(0,0,0)" />
+<circle id="sun" cx="1150" cy="80" r="60" style="fill:rgb(255, 248, 156);stroke-width:3;stroke:rgb(228, 228, 154)"/>
+<polygon id="butterfly" onclick="score()" points="1200,490 1210,460 1250,500 1260,470" style="fill:rgb(240, 199, 249);stroke-width:3;stroke:rgb(204, 173, 234)" />
+<animate 
+           xlink:href="#fon"      
+           attributeName="fill"
+           values ="#c2e9ff;rgb(30, 210, 250);rgb(154, 162, 239);#732db7;#28087b;#fdc188;rgb(30, 210, 250);#c2e9ff"
+           dur="20s"
+           repeatCount="4"
+/>         
+
+<animate 
+           xlink:href="#butterfly"
+           attributeName="fill"
+           values="#8A2BE2;#7B68EE;rgb(170,170,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
+
+<path id="motionPath" fill="none"  stroke-miterlimit="10" d="M202.4,58.3c-13.8,0.1-33.3,0.4-44.8,9.2
+ c-14,10.7-26.2,29.2-31.9,45.6c-7.8,22.2-13.5,48-3.5,70.2c12.8,28.2,47.1,43.6,68.8,63.6c19.6,18.1,43.4,26.1,69.5,29.4
+ c21.7,2.7,43.6,3.3,65.4,4.7c19.4,1.3,33.9-7.7,51.2-15.3c24.4-10.7,38.2-44,40.9-68.9c1.8-16.7,3.4-34.9-10.3-46.5
+ c-9.5-8-22.6-8.1-33.2-14.1c-13.7-7.7-27.4-17.2-39.7-26.8c-5.4-4.2-10.4-8.8-15.8-12.9c-4.5-3.5-8.1-8.3-13.2-11
+ c-6.2-3.3-14.3-5.4-20.9-8.2c-5-2.1-9.5-5.2-14.3-7.6c-6.5-3.3-12.1-7.4-19.3-8.9c-6-1.2-12.4-1.3-18.6-1.5
+ C222.5,59,212.5,57.8,202.4,58.3">
+</path>
+ 
+
+
+<animateMotion
+xlink:href="#butterfly"
+ dur="20s" 
+begin="0s" 
+
+ repeatCount="indefinite">
+ 
+<mpath xlink:href="#motionPath"></mpath>
+ 
+</animateMotion>
+
+
+<script>
+var i = 0;
+function score(){
+  i = i + 1;
+  resEl = document.getElementById('res');
+  resEl.innerHTML = String(i);
+}
+</script>
+
+<br />
+<h1>You click on butterfly <span id="res"></span> times </h1> 
